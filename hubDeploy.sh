@@ -19,7 +19,6 @@ run(){
 getHub() {
 
     HUB_FILENAME=${HUB_FILENAME:-$(awk -F "/" '{print $NF}' <<< $HUB_SOURCE)}
-    echo $HUB_FILENAME
     HUB_DESTINATION="${DESTINATION_DIR}/${HUB_FILENAME}"
 
     echo "getting ${HUB_SOURCE} from GitHub"
