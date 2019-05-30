@@ -4,7 +4,7 @@
 
 HUB_RELEASE_VERSION=2019.4.2
 DESTINATION_DIR="/opt/"
-WORKING_DIR="/opt/hub-${HUB_RELEASE_VERSION}"
+WORKING_DIR="$DESTINATION_DIR/hub-${HUB_RELEASE_VERSION}"
 HUB_SOURCE="https://github.com/blackducksoftware/hub/archive/v${HUB_RELEASE_VERSION}.tar.gz"
 
 echo "Hub one step installer for $HUB_RELEASE_VERSION"
