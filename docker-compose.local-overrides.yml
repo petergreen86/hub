@@ -1,0 +1,27 @@
+# The comments in this file show via example how to override some of the most popular set of options.
+# However, it is possible to override any Docker configuration setting, for example Port mappings, by adding the override here.
+version: '3.4'
+services:
+  authentication:
+    secrets:
+      - HUB_POSTGRES_USER_PASSWORD_FILE
+      - HUB_POSTGRES_ADMIN_PASSWORD_FILE
+  webapp:
+    secrets:
+      - HUB_POSTGRES_USER_PASSWORD_FILE
+      - HUB_POSTGRES_ADMIN_PASSWORD_FILE
+  scan:
+    secrets:
+      - HUB_POSTGRES_USER_PASSWORD_FILE
+      - HUB_POSTGRES_ADMIN_PASSWORD_FILE
+  jobrunner:
+    secrets:
+      - HUB_POSTGRES_USER_PASSWORD_FILE
+      - HUB_POSTGRES_ADMIN_PASSWORD_FILE
+secrets:
+  HUB_POSTGRES_USER_PASSWORD_FILE:
+     external:
+       name: hub_HUB_POSTGRES_USER_PASSWORD_FILE
+  HUB_POSTGRES_ADMIN_PASSWORD_FILE:
+     external:
+       name: hub_HUB_POSTGRES_ADMIN_PASSWORD_FILE
