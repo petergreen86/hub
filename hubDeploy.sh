@@ -88,7 +88,7 @@ pullExternalLocalOverrides(){
 
 }
 
-deployHub-external(){
+deployHubExternal(){
     docker stack deploy -c docker-compose.externaldb.yml -c docker-compose.local-overrides.yml hub
 }
 
@@ -128,7 +128,7 @@ while getopts "seh" OPTION; do
                         extractHub
                         createSecrets
                         pullExternalLocalOverrides
-                        deployHub-external
+                        deployHubExternal
                         ;;
                 h)
                         #help
