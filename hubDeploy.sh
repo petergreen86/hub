@@ -5,12 +5,12 @@
 # 2. the external database has already been initialised
 # 3. your secrets exist in /opt/secrets
 
-HUB_RELEASE_VERSION=2019.4.2
+HUB_RELEASE_VERSION=2019.4.3
 DESTINATION_DIR="/opt/"
 WORKING_DIR="/opt/hub-${HUB_RELEASE_VERSION}"
 HUB_SOURCE="https://github.com/blackducksoftware/hub/archive/v${HUB_RELEASE_VERSION}.tar.gz"
-DATABASE_HOST=sup-hub-pgreen.dc1.lan
-DATABASE_PORT=5432
+DATABASE_HOST=[REPLACE_ME]
+DATABASE_PORT=[REPLACE_ME]
 
 echo "Hub one step installer for $HUB_RELEASE_VERSION"
 
