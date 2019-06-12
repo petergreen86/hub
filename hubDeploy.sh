@@ -89,7 +89,6 @@ pullExternalLocalOverrides(){
 }
 
 deployHub-external(){
-	echo "$PWD"
     docker stack deploy -c docker-compose.externaldb.yml -c docker-compose.local-overrides.yml hub
 }
 
