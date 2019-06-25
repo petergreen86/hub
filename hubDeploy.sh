@@ -5,7 +5,7 @@
 # 2. the external database has already been initialised
 # 3. your secrets exist in /opt/secrets
 
-HUB_RELEASE_VERSION=2019.4.3
+HUB_RELEASE_VERSION=2019.6.0
 DESTINATION_DIR="/opt/"
 WORKING_DIR="/opt/hub-${HUB_RELEASE_VERSION}"
 HUB_SOURCE="https://github.com/blackducksoftware/hub/archive/v${HUB_RELEASE_VERSION}.tar.gz"
