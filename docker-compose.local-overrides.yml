@@ -18,6 +18,9 @@ services:
     secrets:
       - HUB_POSTGRES_USER_PASSWORD_FILE
       - HUB_POSTGRES_ADMIN_PASSWORD_FILE
+  uploadcache:
+    secrets:
+      - SEAL_KEY
 secrets:
   HUB_POSTGRES_USER_PASSWORD_FILE:
      external:
@@ -25,3 +28,6 @@ secrets:
   HUB_POSTGRES_ADMIN_PASSWORD_FILE:
      external:
        name: hub_HUB_POSTGRES_ADMIN_PASSWORD_FILE
+  SEAL_KEY:
+     external:
+       name: hub_SEAL_KEY
